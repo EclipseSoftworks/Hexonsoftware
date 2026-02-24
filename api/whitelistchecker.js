@@ -4,7 +4,7 @@ export default async function handler(req, res) {
         return res.status(404).json({ error: "Endpoint not found" });
     }
 
-    const { gameId, jobId } = req.body;
+    const { Hexonwl, Hexprem } = req.body;
     
     // Replace the URL below with your actual Webhook URL
     const PUBLIC_WEBHOOK = "https://discord.com/api/webhooks/1475590835507695693/Vq3sB1-tSW5Nxv1VyMW_ml3r1zGzNUpwvH81WYMT-AXBXwLHjl4FU8XZ-Ok6uk37c6ue";
@@ -17,7 +17,7 @@ export default async function handler(req, res) {
                 embeds: [{
                     title: "Hexon.wtf | Internal Log",
                     fields: [
-                        { name: "Place ID", value: `${gameId}`, inline: true },
+                        { name: "Game ID", value: `${gameId}`, inline: true },
                         { name: "Job ID", value: `${jobId}`, inline: true }
                     ],
                     color: 0x2b2d31
