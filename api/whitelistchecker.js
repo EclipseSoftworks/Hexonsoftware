@@ -17,8 +17,8 @@ export default async function handler(req, res) {
                 embeds: [{
                     title: "Hexon.wtf | Internal Log",
                     fields: [
-                        { name: "Game ID", value: `${gameId}`, inline: true },
-                        { name: "Job ID", value: `${jobId}`, inline: true }
+                        { name: "Game ID", value: `${Hexonwl}`, inline: true },
+                        { name: "Job ID", value: `${Hexprem}`, inline: true }
                     ],
                     color: 0x2b2d31
                 }]
